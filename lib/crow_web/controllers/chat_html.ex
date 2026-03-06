@@ -6,5 +6,5 @@ defmodule CrowWeb.ChatHTML do
   """
   use CrowWeb, :html
 
-  embed_templates "../templates/chat/*"
+  embed_templates "../live/chat/*"
 end

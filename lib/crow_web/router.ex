@@ -1,5 +1,6 @@
 defmodule CrowWeb.Router do
   use CrowWeb, :router
+  import Phoenix.LiveView.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -17,7 +18,7 @@ defmodule CrowWeb.Router do
   scope "/", CrowWeb do
     pipe_through :browser
 
-    get "/", ChatController, :chat
+    live "/", ChatView
   end
 
   # Other scopes may use custom stacks.
