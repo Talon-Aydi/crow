@@ -12,11 +12,12 @@ defmodule CrowWeb.ChatView do
 
   def render(assigns) do
     ~H"""
+      <.live_component module={CrowWeb.ChatHeaderView} id="chat_header"/>
       <div class="chat-container">
         <div class="flex flex-col">
           <div class="flex flex-col space-y-4 p-3">
               <%= for msg <- @his_messages do %>
-              <div class="max-w-xs p-5 bg-[#282c4d] text-white rounded-xl text-black">
+              <div class="max-w-xs p-5 bg-[#252c34] text-white rounded-t-lg rounded-br-lg text-black">
                   <div class="flex justify-start">
                       <%= msg.content %>
                   </div>
