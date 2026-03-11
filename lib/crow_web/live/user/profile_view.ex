@@ -11,14 +11,31 @@ defmodule CrowWeb.ProfileView do
             <img src="/images/sylus.png" class="w-full h-full rounded-full object-cover" alt="Profile"/>
           </div>
         </div>
+        <div class="h-[4rem] bg-[#1A1F25]">
 
-        <div class="h-[8rem] bg-[#1A1F25]">
-          <span>
-            Talon
-          </span>
+        </div>
+        <div class="h-[4rem] bg-[#1A1F25] flex flex-col text-center">
+
+          <div class="flex flex-row justify-center space-x-[2px]">
+            <span class="text-[20px]">
+              Talon
+            </span>
+            <span class="text-[12px] mt-auto mb-auto">
+              #1234
+            </span>
+          </div>
+          <div class="flex flex-row space-x-[5px] justify-center">
+            <div class="w-2 h-2 mb-auto mt-[4px]">
+              <Icons.phone_icon/>
+            </div>
+
+            <span class="text-[12px]">
+              Playing Love and Deepspace
+            </span>
+          </div>
         </div>
 
-        <div class="flex flex-col flex-1 bg-[#1A1F25] space-y-2 p-3 divide-y divide-[#14181D]">
+        <div class="flex flex-col flex-1 bg-[#1A1F25] space-y-2 p-5 divide-y divide-[#14181D]">
           <div class="flex flex-row pb-3">
               <div class="flex flex-col flex-1">
                 <span class="text-sm text-[#CBD5E1]">Interests</span>
@@ -40,12 +57,18 @@ defmodule CrowWeb.ProfileView do
                 <Icons.microphone_icon/>
               </div>
               <span class="text-xs text-left mt-auto mb-auto text-[#CBD5E1]">Socials 1</span>
+              <div class="w-3 h-3 mt-auto mb-[12px] ml-auto mr-2">
+                <Icons.open_icon/>
+              </div>
             </div>
             <div class="flex flex-row border border-[#14181D] shadow-lg p-2 w-full">
               <div class="w-8 h-8">
                 <Icons.microphone_icon/>
               </div>
               <span class="text-xs text-left mt-auto mb-auto text-[#CBD5E1]">Socials 2</span>
+              <div class="w-3 h-3 mt-auto mb-[12px] ml-auto mr-2">
+                <Icons.open_icon/>
+              </div>
             </div>
           </div>
         </div>
