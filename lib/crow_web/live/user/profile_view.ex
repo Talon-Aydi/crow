@@ -7,15 +7,16 @@ defmodule CrowWeb.ProfileView do
       <div class="flex flex-col overflow-hidden rounded-xl">
         <div class="flex justify-center bg-[#733E6D] justify-center block h-[8rem] relative justify-center">
           <img src="/images/sylus_wp.png" class="w-full h-full object-cover" alt="Profile Wallpaper"/>
-          <div class="rounded-full border-4 border-[#1A1F25] text-center absolute mt-22 w-25 h-25 border">
+          <div class="rounded-full border-6 border-[#1A1F25] text-center absolute mt-22 w-25 h-25 border">
             <img src="/images/sylus.png" class="w-full h-full rounded-full object-cover" alt="Profile"/>
+          </div>
+          <div class="absolute border border-[#007700] rounded-full h-4 w-4 bg-[#005d00] mt-[10rem] ml-[4rem]">
           </div>
         </div>
         <div class="h-[4rem] bg-[#1A1F25]">
 
         </div>
-        <div class="h-[4rem] bg-[#1A1F25] flex flex-col text-center">
-
+        <div class="h-[3rem] bg-[#1A1F25] flex flex-col text-center">
           <div class="flex flex-row justify-center space-x-[2px]">
             <span class="text-[20px]">
               Talon
