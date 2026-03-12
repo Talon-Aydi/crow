@@ -12,22 +12,31 @@ defmodule CrowWeb.ChatView do
 
   def render(assigns) do
     ~H"""
-        <div class="flex flex-col h-screen">
-        <.live_component module={CrowWeb.ChatHeaderView} id="chat_header"/>
-          <div class="flex flex-col space-y-4 p-3">
-              <%= for msg <- @his_messages do %>
-              <div class="max-w-xs p-5 bg-[#252c34] text-white rounded-t-lg rounded-br-lg text-black">
-                  <div class="flex justify-start">
-                      <%= msg.content %>
-                  </div>
-                  <div class="text-sm flex justify-end">
-                      <%= msg.time_stamp %>
-                  </div>
-              </div>
-            <% end %>
+        <div class="flex flex-row w-screen">
+          <div class="w-[15rem]">
+          <.live_component module={CrowWeb.SocialList} id="social_list"/>
           </div>
-          <div class="p-2 mt-auto">
-              <.live_component module={CrowWeb.MessageBox} id="message-box" />
+
+          <div class="flex flex-col h-screen flex-1">
+            <.live_component module={CrowWeb.ChatHeaderView} id="chat_header"/>
+            <div class="w-full h-full rounded-xl">
+              <div class="flex flex-col space-y-4 p-3 h-full">
+                  <%= for msg <- @his_messages do %>
+                  <div class="max-w-xs p-5 bg-[#252c34] text-white rounded-t-lg rounded-br-lg text-black">
+                      <div class="flex justify-start">
+                          <%= msg.content %>
+                      </div>
+                      <div class="text-sm flex justify-end">
+                          <%= msg.time_stamp %>
+                      </div>
+                  </div>
+                <% end %>
+
+                <div class="p-2 mt-auto">
+                    <.live_component module={CrowWeb.MessageBox} id="message-box" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     """
