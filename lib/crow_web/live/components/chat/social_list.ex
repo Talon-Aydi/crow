@@ -11,7 +11,7 @@ defmodule CrowWeb.SocialList do
           <span class="mt-auto mb-auto text-[20px]">Messages</span>
         </div>
 
-        <div class="flex flex-col p-2 space-y-2">
+        <div class="flex flex-col pl-4 pr-4 space-y-2">
           <span>Pinned</span>
           <div class="flex flex-row w-full space-x-2">
             <div class="w-10 h-10 rounded-full overflow-hidden">
